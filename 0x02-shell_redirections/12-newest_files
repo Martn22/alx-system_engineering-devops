@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . -type f -Artls | tail -1
+ls -ltx | head -n 10
