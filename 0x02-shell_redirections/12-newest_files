@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . -type f -lt | tail -1
+ls . -type f -Artls | tail -1
