@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 # Connects to server with key in ~/.ssh/school
 # web-01 server
-# ssh -i ~/.ssh/id_rsa ubuntu@107.22.141.216
+ssh -i ~/.ssh/id_rsa ubuntu@52.91.135.125
 
 # web-02 server
-# ssh -i ~/.ssh/id_rsa ubuntu@18.209.152.155
+# ssh -i ~/.ssh/id_rsa ubuntu@18.210.33.34
 
 # Load balancer
-ssh -i ~/.ssh/id_rsa ubuntu@100.24.253.42
+#ssh -i ~/.ssh/id_rsa ubuntu@52.87.251.240
+
+
+
+
+#copying public key to remote hosts.
+#ssh-copy-id -i /root/.ssh/id_rsa.pub ubuntu@107.22.141.216
+
