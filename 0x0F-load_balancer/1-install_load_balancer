@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend 22coder-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend 22coder-tech-backend
 
-backend clickviral-tech-backend
+backend 22coder-tech-backend
     balance roundrobin
     server 130570-web-01 52.91.135.125:80 check
     server 130570-web-02 18.210.33.34:80 check
