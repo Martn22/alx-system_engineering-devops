@@ -1,0 +1,17 @@
+defaults
+  mode http
+  timeout client 15s
+  timeout connect 10s
+  timeout server 15s
+  timeout http-request 10s
+
+frontend www
+    bind *:80
+    bind *:443 ssl crt /etc/letsencrypt/live/www.22coder.tech/all.pem
+    http-request redirect scheme https code 301 unless { ssl_fc }
+    default_backend servers
+
+backend servers
+    balance roundrobin
+    server 130570-web-01 52.91.135.125:80 check
+    server 130570-web-02 18.210.33.34:80 check
