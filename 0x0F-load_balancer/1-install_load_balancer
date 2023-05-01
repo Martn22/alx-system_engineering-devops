@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend 22coder-tech-frontend
+frontend www
     bind *:80
-    default_backend 22coder-tech-backend
+    default_backend www
 
-backend 22coder-tech-backend
+backend www
     balance roundrobin
     server 130570-web-01 52.91.135.125:80 check
     server 130570-web-02 18.210.33.34:80 check
