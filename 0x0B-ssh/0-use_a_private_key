@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Connects to server with key in ~/.ssh/school
 # web-01 server
-ssh -i ~/.ssh/id_rsa ubuntu@3.85.41.105
+#ssh -i ~/.ssh/id_rsa ubuntu@3.85.41.105
 
 # web-02 server
-#ssh -i ~/.ssh/id_rsa ubuntu@107.23.85.154
+ssh -i ~/.ssh/id_rsa ubuntu@54.237.92.166
 
 # Load balancer
 #ssh -i ~/.ssh/id_rsa ubuntu@100.25.117.140
