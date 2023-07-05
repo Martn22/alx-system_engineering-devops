@@ -4,10 +4,10 @@
 #ssh -i ~/.ssh/id_rsa ubuntu@3.85.41.105
 
 # web-02 server
-ssh -i ~/.ssh/id_rsa ubuntu@54.237.92.166
+#ssh -i ~/.ssh/id_rsa ubuntu@54.237.92.166
 
 # Load balancer
-#ssh -i ~/.ssh/id_rsa ubuntu@100.25.117.140
+ssh -i ~/.ssh/id_rsa ubuntu@3.80.18.45
 
 
 
