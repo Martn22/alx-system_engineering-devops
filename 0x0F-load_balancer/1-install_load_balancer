@@ -40,8 +40,8 @@ frontend www
 
 backend www
     balance roundrobin
-    server 130570-web-01 52.91.135.125:80 check
-    server 130570-web-02 18.210.33.34:80 check
+    server 130570-web-01 3.85.41.105:80 check
+    server 130570-web-02 54.237.92.166:80 check
 "
 
 # shellcheck disable=SC2154
