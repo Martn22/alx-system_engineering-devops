@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Change page returned from querying the root of my domain
-
-echo "Holberton School" > /var/www/html/index.html
